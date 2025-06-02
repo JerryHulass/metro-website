@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Banner from './components/Banner';
+import Aboutus from './components/Aboutus';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Header />
         <Banner />
         <main className="flex-grow bg-white text-gray-800 p-4">
-         <Home />
+         <Aboutus />
        </main>
         <Footer />
       </div>
