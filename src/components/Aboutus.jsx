@@ -6,7 +6,7 @@ export default function Aboutus() {
                 <img src="/src/assets/Group 147.jpg" alt="Repair Photo 1" className="sm:size[100%]" />
             </div>
             <div className="p-2">
-                <div className="pt-5 pb-1 flex">
+                <div className="pt-5 pb-1 flex gap-1">
                     <img src="/src/assets/separator-carsblue.svg" alt="seperator icon" />
                     <p className="dm-sans-regular capitalize text-blue-600 font-bold">WHO WE ARE</p>
                 </div>

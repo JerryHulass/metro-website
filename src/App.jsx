@@ -3,11 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header';
-import Navbar from './components/Navbar';
+import Offer from './components/Offer';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Banner from './components/Banner';
 import Aboutus from './components/Aboutus';
+
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Banner />
         <main className="flex-grow bg-white text-gray-800 p-4">
          <Aboutus />
+         <Offer />
        </main>
         <Footer />
       </div>
