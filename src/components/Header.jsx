@@ -4,7 +4,7 @@ export default function Header() {
       
       <div id="logo-address" className="flex flex-col items-center w-full sm:w-3/4">
         <img src="/src/assets/metro-body-logo.svg" alt="Metro Body & Fender Logo" className="w-full" />
-        <h1 className="text-2xl pt-0 pb-20 days-one-regular font-bold sm:text-3xl">619 Midland Ave, Garfield, NJ 07026</h1>
+        <h1 className="text-2xl pt-0 pb-20 days-one-regular font-bold md:text-3xl sm:pl-3">619 Midland Ave, Garfield, NJ 07026</h1>
       </div>
 
       <div id="text-buttons" className="w-full sm:w-1/2 flex flex-col justify-center">

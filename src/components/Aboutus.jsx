@@ -3,7 +3,7 @@ export default function Aboutus() {
         <>
         <div className="sm:flex sm:flex-row">
             <div className="">
-                <img src="/src/assets/Group 147.jpg" alt="Repair Photo 1" className="sm:size[100%]" />
+                <img src="/src/assets/bmwx3.jpeg" alt="who we are 1" className="sm:size[100%]" />
             </div>
             <div className="p-2">
                 <div className="pt-5 pb-1 flex gap-1">
@@ -16,7 +16,7 @@ export default function Aboutus() {
 
                     <p className="pt-2 pb-2">We are a full service automotive repair, maintenance shop and body work, serving all customers for many years of consistent and friendly service. We understand that sometimes car issue can be stressful and we do everything possible to make our customers feel welcome and satisfied with our service.</p>
 
-                    <img src="/src/assets/thumb-2.jpg" alt="Repair Photo 2" />
+                    <img src="/src/assets/pops-1.jpeg" alt="who we are 2" />
                 </div>
             </div>
         </div>
