@@ -12,7 +12,7 @@ export default function Aboutus() {
                 </div>
 
                 <div className="pb-2 sm:pr-1 lg:pr-2">
-                    <h1 className="text-2xl days-one-regular font-bold">Car Service repairs and maintenance Certified</h1>
+                    <h1 className="text-2xl days-one-regular font-bold capitalize">Car Service repairs and maintenance Certified</h1>
 
                     <p className="pt-2 pb-2">We are a full service automotive repair, maintenance shop and body work, serving all customers for many years of consistent and friendly service. We understand that sometimes car issue can be stressful and we do everything possible to make our customers feel welcome and satisfied with our service.</p>
 

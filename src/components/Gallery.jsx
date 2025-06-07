@@ -1,0 +1,101 @@
+import { useState } from "react";
+
+
+const images = [
+  {
+    src: "/src/assets/rx7-tow.jpg",
+    alt: "Service 1",
+  },
+  {
+    src: "/src/assets/vette.jpg",
+    alt: "Service 2",
+  },
+  {
+    src: "/src/assets/mini_edited.jpg",
+    alt: "Service 3",
+  },
+  {
+    src: "/src/assets/bmwm5.jpg",
+    alt: "Service 4",
+  },
+  {
+    src: "/src/assets/wrx.jpg",
+    alt: "Service 5",
+  },
+  {
+    src: "/src/assets/rx7.jpg",
+    alt: "Service 6",
+  },
+  {
+    src: "/src/assets/redcar-logo.jpg",
+    alt: "Service 7",
+  },
+  {
+    src: "/src/assets/paintbooth1.jpg",
+    alt: "Service 8",
+  },
+  {
+    src: "/src/assets/rx7-wide.jpg",
+    alt: "Service 9",
+  },
+];
+
+
+export default function Offer() {
+  const [current, setCurrent] = useState(0);
+
+  const prevSlide = () =>
+    setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  const nextSlide = () =>
+    setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+
+  return (
+    <div className="bg-gray-100 p-2 sm:p-6">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-2 sm:p-8 mb-4 sm:mb-8">
+        <div className="pt-5 pb-1 flex gap-1">
+          <img src="/src/assets/separator-carsblue.svg" alt="seperator icon" />
+          <p className="dm-sans-regular capitalize text-blue-600 font-bold">
+            OUR LATEST WORK
+          </p>
+        </div>
+        <h1 className=" pb-3 text-2xl days-one-regular font-bold capitalize sm:text-3xl lg:text-4xl">Gallery</h1>
+        <div className="w-full max-w-4xl mx-auto relative">
+          <img
+            src={images[current].src}
+            alt={images[current].alt}
+            className="w-full h-[28rem] sm:h-64 md:h-80 lg:h-96 object-contain rounded-xl transition-all duration-500 bg-black"
+          />
+          {/* Prev Button */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 left-2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white"
+            aria-label="Previous"
+          >
+            &#8592;
+          </button>
+          {/* Next Button */}
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 right-2 -translate-y-1/2 bg-white/70 rounded-full p-2 shadow hover:bg-white"
+            aria-label="Next"
+          >
+            &#8594;
+          </button>
+          {/* Dots */}
+          <div className="flex justify-center mt-2 space-x-2">
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`w-3 h-3 rounded-full ${
+                  idx === current ? "bg-blue-600" : "bg-gray-300"
+                }`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
