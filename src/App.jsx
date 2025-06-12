@@ -3,9 +3,9 @@ import './App.css'
 import Header from './components/Header';
 import Gallery from './components/Gallery';
 import Footer from './components/Footer';
-import Home from './pages/Home';
 import Banner from './components/Banner';
 import Aboutus from './components/Aboutus';
+import Offer from './components/Offer';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
         <Banner />
         <main className="flex-grow bg-white text-gray-800 p-4">
          <Aboutus />
+         <Offer />
          <Gallery />
        </main>
         <Footer />
