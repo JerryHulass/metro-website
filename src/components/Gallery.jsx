@@ -3,39 +3,39 @@ import { useState } from "react";
 
 const images = [
   {
-    src: "public/assets/rx7-tow.jpg",
+    src: "/public/images/rx7-tow.jpg",
     alt: "Service 1",
   },
   {
-    src: "public/assets/vette.jpg",
+    src: "/public/images/vette.jpg",
     alt: "Service 2",
   },
   {
-    src: "public/assets/mini_edited.jpg",
+    src: "/public/images/mini_edited.jpg",
     alt: "Service 3",
   },
   {
-    src: "public/assets/bmwm5.jpg",
+    src: "/public/images/bmwm5.jpg",
     alt: "Service 4",
   },
   {
-    src: "public/assets/wrx.jpg",
+    src: "/public/images/wrx.jpg",
     alt: "Service 5",
   },
   {
-    src: "public/assets/rx7.jpg",
+    src: "/public/images/rx7.jpg",
     alt: "Service 6",
   },
   {
-    src: "public/assets/redcar-logo.jpg",
+    src: "/public/images/redcar-logo.jpg",
     alt: "Service 7",
   },
   {
-    src: "public/assets/paintbooth1.jpg",
+    src: "/public/images/paintbooth1.jpg",
     alt: "Service 8",
   },
   {
-    src: "public/assets/rx7-wide.jpg",
+    src: "/public/images/rx7-wide.jpg",
     alt: "Service 9",
   },
 ];
@@ -53,7 +53,7 @@ export default function Offer() {
     <div className="bg-gray-100 p-2 sm:p-6">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-2 sm:p-8 mb-4 sm:mb-8">
         <div className="pt-5 pb-1 flex gap-1">
-          <img src="public/assets/separator-carsblue.svg" alt="seperator icon" />
+          <img src="/public/images/separator-carsblue.svg" alt="seperator icon" />
           <p className="dm-sans-regular capitalize text-blue-600 font-bold">
             OUR LATEST WORK
           </p>
