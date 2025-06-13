@@ -26,7 +26,7 @@ export default function Offer() {
       {/* First Card */}
       <div className="bg-white rounded-xl shadow-lg max-w-md w-full p-6 transition transform hover:-translate-y-2 hover:shadow-2xl">
         <div className="flex items-center gap-2 mb-2">
-          <img src="/public/assets/separator-carsblue.svg" alt="separator icon" className="h-6" />
+          <img src="/images/separator-carsblue.svg" alt="separator icon" className="h-6" />
           <p className="dm-sans-regular capitalize text-blue-600 font-bold">WHAT WE OFFER</p>
         </div>
         <h2 className="text-2xl font-bold mb-4 text-gray-900 days-one-regular">We Service All</h2>
@@ -42,7 +42,7 @@ export default function Offer() {
       {/* Second Card */}
       <div className="bg-white rounded-xl shadow-lg max-w-md w-full p-6 transition transform hover:-translate-y-2 hover:shadow-2xl">
         <div className="flex items-center gap-2 mb-2">
-          <img src="/public/assets/separator-carsblue.svg" alt="separator icon" className="h-6" />
+          <img src="/images/separator-carsblue.svg" alt="separator icon" className="h-6" />
           <p className="dm-sans-regular capitalize text-blue-600 font-bold">TYPE OF WORK</p>
         </div>
         <h2 className="text-2xl font-bold mb-4 text-gray-900 days-one-regular">What We Do</h2>
