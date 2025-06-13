@@ -17,7 +17,7 @@ export default function Header() {
         <div id="text-header">
           <h1 className="text-3xl font-bold days-one-regular pt-10">Expert Collision Repair</h1>
           <p className="text-xl pt-5 dm-sans-regular px-4 sm:px-0">
-            We offer highly skilled certified auto-body technicians to repair your vehicle to its pre-accident condition. 
+            We have highly skilled certified auto-body technicians to repair your vehicle to its pre-accident condition. 
           </p>
         </div>
         <div className="py-11 days-one-regular flex space-x-4">

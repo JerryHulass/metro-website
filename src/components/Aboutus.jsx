@@ -14,7 +14,7 @@ export default function Aboutus() {
                 <div className="pb-2 sm:pr-1 lg:pr-2">
                     <h1 className="text-2xl days-one-regular font-bold capitalize">Full-Service Auto Body & Collision Repair</h1>
 
-                    <p className="pt-2 pb-6">We are a full-service auto body and collision repair, serving all customers for many years of consistent and friendly service. We understand that sometimes car issue can be stressful and we do everything possible to make our customers feel welcome and satisfied with our service. </p>
+                    <p className="pt-2 pb-6">We are a full-service auto body and collision repair, serving all customers for many years of consistent and friendly service. We understand that sometimes car issues can be stressful and we do everything possible to make our customers feel welcome and satisfied with our service. </p>
                     
                     <img src="/images/pops-1.jpeg" alt="who we are 2" />
                 </div>
