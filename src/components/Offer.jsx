@@ -46,7 +46,7 @@ export default function Offer() {
           <p className="dm-sans-regular capitalize text-blue-600 font-bold">TYPE OF WORK</p>
         </div>
         <h2 className="text-2xl font-bold mb-4 text-gray-900 days-one-regular">What We Do</h2>
-        <ul className="list-disc list-inside text-gray-700 mb-4">
+        <ul className="text-gray-700 mb-4">
           {visibleWork.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
