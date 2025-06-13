@@ -8,14 +8,14 @@ export default function Header() {
           alt="Metro Body & Fender Logo"
           className="w-full max-w-xs sm:max-w-sm"
         />
-        <h1 className="text-xl days-one-regular md:text-3xl bg-black/70 px-4 py-2 rounded mt-4 w-full text-center">
+        <h1 className="text-2xl days-one-regular md:text-3xl bg-black/70 px-4 py-2 rounded mt-4 w-full text-center">
           619 Midland Ave, Garfield, NJ 07026
         </h1>
       </div>
       {/* Text and buttons: appears second on mobile, first on desktop */}
       <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left sm:col-start-1 sm:row-start-1 order-2 sm:order-1 md:pl-32 md:pt-32">
         <div id="text-header">
-          <h1 className="text-3xl font-bold days-one-regular pt-10">Expert Collision Repair</h1>
+          <h1 className="text-3xl days-one-regular pt-10">Expert Collision Repair</h1>
           <p className="text-xl pt-5 dm-sans-regular px-4 sm:px-0">
             We have highly skilled certified auto-body technicians to repair your vehicle to its pre-accident condition. 
           </p>
