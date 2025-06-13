@@ -21,11 +21,10 @@ export default function Header() {
           </p>
         </div>
         <div className="py-11 days-one-regular flex space-x-4">
-          <a className="group relative h-7 overflow-hidden bg-blue-600 px-6 text-neutral-50 transition"
-          href="bobhulass@gmail.com">
-            <span>✉️ Contact Us</span>
+          <button className="group relative h-7 overflow-hidden bg-blue-600 px-6 text-neutral-50 transition">
+            <span>Email</span>
             <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
-          </a>
+          </button>
           <a
             role="link"
             href="tel:2013980300"
