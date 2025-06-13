@@ -50,7 +50,7 @@ export default function Offer() {
     setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
   return (
-    <div className="bg-gray-100 p-2 sm:p-6">
+    <div className="p-2 sm:p-6">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-2 sm:p-8 mb-4 sm:mb-8">
         <div className="pt-5 pb-1 flex gap-1">
           <img src="/images/separator-carsblue.svg" alt="seperator icon" />
