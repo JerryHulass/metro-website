@@ -4,7 +4,7 @@ export default function Header() {
       {/* Logo and address: appears first on mobile, second on desktop */}
       <div className="flex flex-col items-center sm:col-start-2 sm:row-start-1 order-1 sm:order-2">
         <img
-          src="/public/images/metro-body-logo.svg"
+          src="public/images/metro-body-logo.svg"
           alt="Metro Body & Fender Logo"
           className="w-full max-w-xs sm:max-w-sm"
         />
