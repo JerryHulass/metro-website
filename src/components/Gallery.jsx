@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 
 const images = [
@@ -43,11 +43,31 @@ const images = [
 
 export default function Offer() {
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef(null);
 
   const prevSlide = () =>
     setCurrent((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   const nextSlide = () =>
     setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+
+  // Swipe handlers
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diff = touchStartX.current - touchEndX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    touchStartX.current = null;
+  };
 
   return (
     <div className="p-2 sm:p-6">
@@ -59,7 +79,11 @@ export default function Offer() {
           </p>
         </div>
         <h1 className=" pb-3 text-2xl days-one-regular font-bold capitalize sm:text-3xl lg:text-4xl">Gallery</h1>
-        <div className="w-full max-w-4xl mx-auto relative">
+        <div
+          className="w-full max-w-4xl mx-auto relative"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <img
             src={images[current].src}
             alt={images[current].alt}
