@@ -38,6 +38,22 @@ const images = [
     src: "/images/rx7-wide.jpg",
     alt: "Service 9",
   },
+  {
+    src: "/images/paint-josh.jpeg",
+    alt: "Service 10",
+  },
+  {
+    src: "/images/pathfinder.jpeg",
+    alt: "Service 11",
+  },
+  {
+    src: "/images/airlift.jpeg",
+    alt: "Service 12",
+  },
+  {
+    src: "/images/bmw-m4.JPG",
+    alt: "Service 13",
+  },
 ];
 
 

@@ -20,15 +20,18 @@ export default function Header() {
             We have highly skilled certified auto-body technicians to repair your vehicle to its pre-accident condition. 
           </p>
         </div>
-        <div className="py-11 days-one-regular flex space-x-4">
-          <button className="group relative h-7 overflow-hidden bg-blue-600 px-6 text-neutral-50 transition">
-            <span>Email</span>
+        <div className="py-11 days-one-regular flex flex-col space-y-3 xl:flex-row xl:space-y-0 xl:space-x-4">
+          <a
+            href="mailto:metrobodyfender1@gmail.com"
+            className="group relative h-7 overflow-hidden bg-blue-600 px-6 text-neutral-50 transition flex items-center justify-center rounded"
+          >
+            <span>metrobodyfender1@gmail.com</span>
             <div className="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div>
-          </button>
+          </a>
           <a
             role="link"
             href="tel:2013980300"
-            className="relative bg-[linear-gradient(#262626,#262626),linear-gradient(#3b82f6,#3b82f6)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size,color] duration-500 hover:bg-[0_2px,100%_2px] hover:text-[#3b82f6]"
+            className="relative flex items-center justify-center bg-[linear-gradient(#262626,#262626),linear-gradient(#3b82f6,#3b82f6)] bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat text-white transition-[background-size,color] duration-500 hover:bg-[0_2px,100%_2px] hover:text-[#3b82f6] rounded h-7 px-6 w-auto min-w-max"
           >
             📞 201-398-0300
           </a>
