@@ -4,6 +4,8 @@ export default function Slider() {
     const [sliderPosition, setSliderPosition] = useState(50);
     const isDragging = useRef(false);
 
+    const isMobile = () => window.innerWidth < 640;
+
     const handleMouseDown = (event) => {
         isDragging.current = true;
         moveSlider(event);
@@ -14,7 +16,9 @@ export default function Slider() {
     };
 
     const handleMouseMove = (event) => {
-        if (isDragging.current) {
+        if (isMobile()) {
+            moveSlider(event);
+        } else if (isDragging.current) {
             moveSlider(event);
         }
     };
