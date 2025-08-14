@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@material-tailwind/react": "^2.1.10",
+    "emailjs": "^4.0.3",
+    "framer-motion": "^12.18.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

@@ -8,6 +8,7 @@ import Aboutus from './components/Aboutus';
 import Offer from './components/Offer';
 
 
+
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
          <Offer />
          <Gallery />
        </main>
+       
         <Footer />
       </div>
     </>
