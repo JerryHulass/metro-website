@@ -57,3 +57,10 @@ const deleteTasks = async (req, res) => {
     }
 };
 
+module.exports = {
+    getTasks,
+    createTasks,
+    getSingleTask,
+    updateTasks,
+    deleteTasks
+};
