@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Banner from './components/Banner';
 import Aboutus from './components/Aboutus';
 import Offer from './components/Offer';
-
+import Slider from './components/Slider';
 
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
          <Aboutus />
          <Offer />
          <Gallery />
+          <Slider />
        </main>
        
         <Footer />
