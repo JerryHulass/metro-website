@@ -6,6 +6,7 @@ export default function Slider() {
 
     const isMobile = () => window.innerWidth < 640;
 
+    // Mouse events
     const handleMouseDown = (event) => {
         isDragging.current = true;
         moveSlider(event);
@@ -16,16 +17,40 @@ export default function Slider() {
     };
 
     const handleMouseMove = (event) => {
-        if (isMobile()) {
-            moveSlider(event);
-        } else if (isDragging.current) {
+        if (isDragging.current) {
             moveSlider(event);
         }
     };
 
+    // Touch events
+    const handleTouchStart = (event) => {
+        isDragging.current = true;
+        moveSliderTouch(event);
+    };
+
+    const handleTouchEnd = () => {
+        isDragging.current = false;
+    };
+
+    const handleTouchMove = (event) => {
+        if (isDragging.current) {
+            moveSliderTouch(event);
+        }
+    };
+
+    // Mouse move logic
     const moveSlider = (event) => {
         const rect = event.currentTarget.getBoundingClientRect();
         const x = Math.max(0, Math.min(event.clientX - rect.left, rect.width));
+        const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
+        setSliderPosition(percent);
+    };
+
+    // Touch move logic
+    const moveSliderTouch = (event) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        const touch = event.touches[0];
+        const x = Math.max(0, Math.min(touch.clientX - rect.left, rect.width));
         const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
         setSliderPosition(percent);
     };
@@ -47,6 +72,9 @@ export default function Slider() {
                         onMouseUp={handleMouseUp}
                         onMouseLeave={handleMouseUp}
                         onMouseMove={handleMouseMove}
+                        onTouchStart={handleTouchStart}
+                        onTouchEnd={handleTouchEnd}
+                        onTouchMove={handleTouchMove}
                         style={{ cursor: "ew-resize" }}
                     >
                         <img src="/images/BMW-after2.jpeg" loading="eager" alt="" className="w-full h-full object-cover" />
