@@ -1,3 +1,5 @@
+import Video from "./Video";
+
 export default function Header() {
   return (
     <div className="bg-black text-white pt-0 sm:pb-24 px-2 items-center text-center sm:grid sm:grid-cols-2 2xl:pl-16">
@@ -13,7 +15,7 @@ export default function Header() {
         </h1>
       </div>
       {/* Text and buttons: appears second on mobile, first on desktop */}
-      <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left sm:col-start-1 sm:row-start-1 order-2 sm:order-1 md:pl-32 md:pt-32">
+      <div className="flex flex-col justify-center items-center sm:items-start text-center sm:text-left sm:col-start-1 sm:row-start-1 order-2 sm:order-1 sm:pl-10 sm:pr-10 md:pl-28 md:pt-32 md:pr-10">
         <div id="text-header">
           <h1 className="text-3xl days-one-regular pt-10">Expert Collision Repair</h1>
           <p className="text-xl pt-5 dm-sans-regular px-4 sm:px-0">
@@ -47,6 +49,9 @@ export default function Header() {
             <span className="absolute bottom-0 left-0 h-0 w-[2px] bg-indigo-300 transition-all delay-300 duration-100 group-hover:h-full" />
           </a>
         </div>
+      </div>
+      <div className="sm:hidden">
+        <Video />
       </div>
     </div>
   );

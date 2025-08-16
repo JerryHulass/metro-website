@@ -19,8 +19,8 @@ function App() {
         <main className="flex-grow bg-white text-gray-800 p-4">
          <Aboutus />
          <Offer />
+         <Slider />
          <Gallery />
-          <Slider />
        </main>
        
         <Footer />
