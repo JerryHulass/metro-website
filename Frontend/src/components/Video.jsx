@@ -5,6 +5,8 @@ export default function Video() {
                 autoPlay
                 muted
                 loop
+                playsInline
+                preload="auto"
                 className="block w-full aspect-auto border-5"
             >
                 <source src="/images/red-corvette2.mp4" type="video/mp4" />
