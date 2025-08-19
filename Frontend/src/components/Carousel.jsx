@@ -3,61 +3,57 @@ import { useState, useRef } from "react";
 
 const images = [
   {
-    src: "/images/rx7-tow.jpg",
+    src: "/car-images/rx7-tow.jpg",
     alt: "Service 1",
   },
   {
-    src: "/images/vette.jpg",
+    src: "/car-images/vette.jpg",
     alt: "Service 2",
   },
   {
-    src: "/images/mini_edited.jpg",
+    src: "/car-images/mini_edited.jpg",
     alt: "Service 3",
   },
   {
-    src: "/images/bmwm5.jpg",
+    src: "/car-images/bmwm5.jpg",
     alt: "Service 4",
   },
   {
-    src: "/images/wrx.jpg",
+    src: "/car-images/wrx.jpg",
     alt: "Service 5",
   },
   {
-    src: "/images/rx7.jpg",
+    src: "/car-images/rx7.jpg",
     alt: "Service 6",
   },
   {
-    src: "/images/redcar-logo.jpg",
+    src: "/car-images/redcar-logo.jpg",
     alt: "Service 7",
   },
   {
-    src: "/images/paintbooth1.jpg",
+    src: "/car-images/paintbooth1.jpg",
     alt: "Service 8",
   },
   {
-    src: "/images/rx7-wide.jpg",
+    src: "/car-images/paint-josh.jpeg",
     alt: "Service 9",
   },
   {
-    src: "/images/paint-josh.jpeg",
+    src: "/car-images/pathfinder.jpeg",
     alt: "Service 10",
   },
   {
-    src: "/images/pathfinder.jpeg",
+    src: "/car-images/airlift.jpeg",
     alt: "Service 11",
   },
   {
-    src: "/images/airlift.jpeg",
+    src: "/car-images/bmw-m4.JPG",
     alt: "Service 12",
-  },
-  {
-    src: "/images/bmw-m4.JPG",
-    alt: "Service 13",
   },
 ];
 
 
-export default function Offer() {
+export default function Carousel() {
   const [current, setCurrent] = useState(0);
   const touchStartX = useRef(null);
 
@@ -133,6 +129,14 @@ export default function Offer() {
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
+          </div>
+          <div className="flex justify-center mt-4">
+            <a
+              href="/gallery"
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition flex justify-center"
+            >
+              View Full Gallery
+            </a>
           </div>
         </div>
       </div>

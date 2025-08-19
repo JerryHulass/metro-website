@@ -3,7 +3,7 @@ export default function Aboutus() {
         <>
         <div className="sm:flex sm:flex-row justify-">
             <div className="w-full sm:w-3/5 p-2 justify-items-center self-center">
-                <img src="/images/bmwx3.jpeg" alt="bmwx3" className="max-h-[30rem] 2xl:max-h-[40rem] w-auto" />
+                <img src="/car-images/bmwx3.jpeg" alt="bmwx3" className="max-h-[30rem] 2xl:max-h-[40rem] w-auto" />
             </div>
             <div className="w-full sm:w-2/5 p-2 2xl:pr-16">
                 <div className="pt-5 pb-1 flex gap-1">

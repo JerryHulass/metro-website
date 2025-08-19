@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import Video from "./Video";
 
 export default function Slider() {
     const [sliderPosition, setSliderPosition] = useState(50);
@@ -57,6 +58,9 @@ export default function Slider() {
 
     return (
         <div className="p-2 sm:p-6">
+            <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-2 hidden sm:block sm:p-8 mb-4 sm:mb-8">
+                <Video />
+            </div>
             <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-2 sm:p-8 mb-4 sm:mb-8">
                 <div className="pt-5 pb-1 flex gap-1">
                     <img src="/images/separator-carsblue.svg" alt="seperator icon" />
@@ -77,12 +81,12 @@ export default function Slider() {
                         onTouchMove={handleTouchMove}
                         style={{ cursor: "ew-resize" }}
                     >
-                        <img src="/images/BMW-after2.jpeg" loading="eager" alt="" className="w-full h-full object-cover" />
+                        <img src="/car-images/BMW-after2.jpeg" loading="eager" alt="" className="w-full h-full object-cover" />
                         <div
                             className="absolute top-0 left-0 right-0 w-full aspect-[70/45] m-auto overflow-hidden select-none"
                             style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
                         >
-                            <img src="/images/BMW-before.jpeg" loading="eager" alt="" className="w-full h-full object-cover" />
+                            <img src="/car-images/BMW-before.jpeg" loading="eager" alt="" className="w-full h-full object-cover" />
                         </div>
                         <div>
                             <div
