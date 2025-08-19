@@ -18,8 +18,11 @@ const photos = [
   { id: 13, image: "/car-images/wrx.jpg", title: "WRX" },
   { id: 14, image: "/car-images/rangeblue.jpg", title: "blue range" },
   { id: 15, image: "/car-images/gtr.jpg", title: "GTR" },
-  { id: 16, image: "/car-images/redmini.jpg", title: "Red Mini" },
-  { id: 17, image: "/car-images/bmw235.jpg", title: "BMW M235i" },
+  { id: 16, image: "/car-images/black-tesla.jpeg", title: "Black Tesla" },
+  { id: 17, image: "/car-images/blue-e46.jpeg", title: "BMW E46" },
+  { id: 18, image: "/car-images/bronco.jpg", title: "Bronco" },
+  { id: 19, image: "/car-images/red-vette.jpeg", title: "Red Corvette" },
+  { id: 20, image: "/car-images/new-mini.jpeg", title: "New Mini" },
 ];
 
 export default function Gallery() {
