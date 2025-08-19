@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import Carousel from "../components/carousel";
+import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
 import Banner from '../components/Banner';
 import Aboutus from '../components/Aboutus';
