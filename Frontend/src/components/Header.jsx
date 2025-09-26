@@ -14,7 +14,7 @@ export default function Header() {
         <img
           src="/images/metro-body-logo.svg"
           alt="Metro Body & Fender Logo"
-          className="w-full max-w-xs sm:max-w-sm h-14"
+          className="w-full sm:max-w-sm"
         />
         <h1 className="text-2xl days-one-regular md:text-3xl bg-black/70 px-4 py-2 rounded mt-4 w-full text-center">
           619 Midland Ave, Garfield, NJ 07026
