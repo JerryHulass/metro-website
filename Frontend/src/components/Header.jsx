@@ -1,6 +1,12 @@
+import React, { useState } from "react";
 import Video from "./Video";
+import ContactForm from "./ContactForm";
 
 export default function Header() {
+  const [showForm, setShowForm] = useState(false);
+
+  console.log(showForm);
+
   return (
     <div className="bg-black text-white pt-0 sm:pb-24 px-2 items-center text-center sm:grid sm:grid-cols-2 2xl:pl-16">
       {/* Logo and address: appears first on mobile, second on desktop */}
@@ -8,7 +14,7 @@ export default function Header() {
         <img
           src="/images/metro-body-logo.svg"
           alt="Metro Body & Fender Logo"
-          className="w-full max-w-xs sm:max-w-sm"
+          className="w-full max-w-xs sm:max-w-sm h-14"
         />
         <h1 className="text-2xl days-one-regular md:text-3xl bg-black/70 px-4 py-2 rounded mt-4 w-full text-center">
           619 Midland Ave, Garfield, NJ 07026
@@ -26,6 +32,7 @@ export default function Header() {
           {/* Email Button */}
           <a
             href="#contact"
+            onClick={e => { e.preventDefault(); setShowForm(true); }}
             className="group relative h-7 overflow-hidden bg-blue-600 px-6 text-neutral-50 transition flex items-center justify-center rounded"
           >
             <span>Contact</span>
@@ -53,6 +60,7 @@ export default function Header() {
       <div className="sm:hidden">
         <Video />
       </div>
+      {showForm && <ContactForm onClose={() => setShowForm(false)} />}
     </div>
   );
 }
