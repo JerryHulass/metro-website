@@ -6,7 +6,7 @@ const photos = [
   { id: 1, image: "/car-images/bmw-m4.JPG", title: "BMW M4" },
   { id: 2, image: "/car-images/rx7-wide.jpg", title: "RX7 Widebody" },
   { id: 3, image: "/car-images/bmwm5.jpg", title: "BMW M5" },
-  { id: 4, image: "/car-images/paint-josh.jpeg", title: "Paint Josh" },
+  { id: 4, image: "/car-images/paint-josh.jpeg", title: "Paint Booth" },
   { id: 5, image: "/car-images/mini.jpg", title: "Mini Cooper" },
   { id: 6, image: "/car-images/bmwx3.jpeg", title: "BMW X3" },
   { id: 7, image: "/car-images/mini_edited.jpg", title: "Mini Cooper" },
@@ -20,7 +20,7 @@ const photos = [
   { id: 15, image: "/car-images/gtr.jpg", title: "GTR" },
   { id: 16, image: "/car-images/black-tesla.jpeg", title: "Black Tesla" },
   { id: 17, image: "/car-images/blue-e46.jpeg", title: "BMW E46" },
-  { id: 18, image: "/car-images/bronco.jpg", title: "Bronco" },
+  { id: 18, image: "/car-images/bronco.jpeg", title: "Bronco" },
   { id: 19, image: "/car-images/red-vette.jpeg", title: "Red Corvette" },
   { id: 20, image: "/car-images/new-mini.jpeg", title: "New Mini" },
 ];
@@ -63,7 +63,6 @@ export default function Gallery() {
               id={layoutId}
               onClose={closePopup}
               image={photos.find((p) => p.id === layoutId)?.image}
-              title={photos.find((p) => p.id === layoutId)?.title}
             />
           )}
         </AnimatePresence>
