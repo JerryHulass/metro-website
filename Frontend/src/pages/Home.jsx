@@ -14,7 +14,7 @@ export default function Home() {
       <Banner />
       <main className="flex-grow bg-white text-gray-800 p-4">
         <Aboutus />
-        <TeslaBanner /> {/* <-- Inserted here */}
+        <TeslaBanner />
         <Offer />
         <Slider />
         <Carousel />
