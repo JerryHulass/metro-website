@@ -4,6 +4,7 @@ export default function Video() {
             <video
                 autoPlay
                 muted
+                defaultMuted
                 loop
                 playsInline
                 preload="auto"
